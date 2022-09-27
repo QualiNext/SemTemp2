@@ -4,11 +4,11 @@ description: All in one deployment of our promotions manager
 
 inputs:
   PORT:
-    type: numeric
+    type: string
     display-style: normal
     default: 3000
   API_PORT:
-    type: numeric
+    type: string
     display-style: normal
     default: 3001
   AWS_INSTANCE_TYPE:
