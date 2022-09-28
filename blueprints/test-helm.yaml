@@ -47,7 +47,7 @@ inputs:
   Cluster_Name:
     type: string
     display-style: normal
-    default: eks-sem2
+    default: eks-sem4
   Cluster_VPC_ID:
     type: string
     display-style: normal
@@ -65,7 +65,7 @@ grains:
         path: github.com/oleksandr-r-q/aws-workshop-torque/terraform/alb-iam
       host:
         cloud-account: AWS
-        compute-service: eks-sem2
+        compute-service: eks-sem4
       inputs:
         - SANDBOX_ID: '{{ sandboxid | downcase }}'
         - AWS_REGION: '{{.inputs.AWS_REGION}}'
@@ -82,7 +82,7 @@ grains:
         path: https://github.com/oleksandr-r-q/aws-workshop-torque.git//helm/promotions-manager-test
       host:
         cloud-account: AWS
-        compute-service: eks-sem2
+        compute-service: eks-sem4
       inputs:
         - env.SANDBOX_ID: '{{ sandboxid | downcase }}'
         - env.API_PORT: '{{.inputs.API_PORT}}'
@@ -102,7 +102,7 @@ grains:
         path: github.com/oleksandr-r-q/aws-workshop-torque/terraform/lb-data
       host:
         cloud-account: AWS
-        compute-service: eks-sem2
+        compute-service: eks-sem4
       inputs:
         - SANDBOX_ID: '{{ sandboxid | downcase }}'
         - AWS_REGION: '{{.inputs.AWS_REGION}}'
